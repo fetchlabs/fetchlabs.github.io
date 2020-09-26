@@ -1,0 +1,54 @@
+body {
+	background-color: #262523;
+	background-image: url(../graphics/background.png);
+	/* background-image: url(/assets/sample_2.jpg); */
+
+	color: #B0AEAC;
+	font-family: "Texta Light";
+}
+
+aside {
+	display: none;
+}
+
+main {
+	backdrop-filter: blur(2px);
+	height: 720px;
+  padding: 113px 166px;
+	width: 1280px;
+}
+
+header {
+	margin: 12px 0px 32px;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: 100;
+  line-height: 48px;
+	margin: 0px 24px;
+}
+
+section {
+	backdrop-filter: blur(2px);
+	width: 947px;
+}
+
+section > div {
+	height: 288px;
+	overflow: hidden;
+	padding: 0 0 0 24px;
+	width: 636px;
+}
+
+section > div > div {
+	font-size: 24px;
+	min-height: 16px;
+	letter-spacing: .06px;
+	line-height: 32px;
+	width: auto;
+}
+
+section > div > div:focus {
+    outline: 0px solid transparent;
+}
