@@ -4,6 +4,7 @@
 		<meta charset=utf-8 />
 		<title>Fetch LABS | Chromatic Conversion</title>
 		<link rel="stylesheet" type="text/css" href="style/typography.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="style/base.css" />
 		<link rel="stylesheet" type="text/css" href="style/sheet.css" />
 	</head>
@@ -13,19 +14,39 @@
 				<h1>Chromatic Conversion</h1>
 			</header>
 			<section>
+				<header class="alert alert-dark alert-verydark" >
+					<p>Use the inputs below to convert your colour format</p>
+				</header>
 				<div id="wrapper">
-					<!-- <div id="tablet" contenteditable="true">
-						BBC World News delivers a truly international perspective on the big stories making headlines around the globe. In-depth, impartial analysis of breaking news and events of global significance, challenge the way you view your world.
-
-						BBC World News delivers a truly international perspective on the big stories making headlines around the globe. In-depth, impartial analysis of breaking news and events of global significance, challenge the way you vi.
-					</div> -->
+					<form id="form">
+						<fieldset>
+							<legend>rgb(a)</legend>
+							<input id="rgb" class="form-control form-control-lg input_2-3" placeholder="FFFFFF" />
+							<input id="a" class="form-control form-control-lg alpha input_1-3" placeholder="ff" />
+						</fieldset>
+						<fieldset>
+							<legend>(0x)hexadecimal</legend>
+							<input id="ox" class="form-control form-control-lg alpha input_1-3" placeholder="0xff"/>
+							<input id="hexadecimal" class="form-control form-control-lg input_2-3" placeholder="FFFFFF" />
+						</fieldset>
+						<fieldset class="footer">
+							<fieldset>
+								<input id="swatch" class="form-control form-control-lg form-control input_3-4" disabled />
+								<input id="decimal" class="form-control form-control-lg form-control-dark input_1-4" disabled placeholder="4278190335" />
+							</fieldset>
+							<fieldset>
+								<button class="btn btn-primary input_1-4">COPY</button>
+								<button id="convert" class="btn btn-primary input_1-4">CONVERT</button>
+							</fieldset>
+						</fieldset>
+					</form>
 				</div>
 			</section>
 		</main>
 		<aside>
 			<!-- <p>Add your Channel Description here</p> -->
 		</aside>
-
+		<script type="text/javascript" src="vendor/micro/µ.js"></script>
 		<script type="text/javascript" src="scripts/scripts.js"></script>
 	</body>
 </html>
