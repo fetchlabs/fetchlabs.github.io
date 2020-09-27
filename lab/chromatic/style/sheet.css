@@ -1,8 +1,5 @@
 body {
 	background-color: #262523;
-	background-image: url(../graphics/background.png);
-	/* background-image: url(/assets/sample_2.jpg); */
-
 	color: #B0AEAC;
 	font-family: "Texta Light";
 }
@@ -14,7 +11,7 @@ aside {
 main {
 	backdrop-filter: blur(2px);
 	height: 720px;
-  padding: 113px 166px;
+  padding: 64px 166px;
 	width: 1280px;
 }
 
@@ -34,8 +31,12 @@ section {
 	width: 947px;
 }
 
+section header {
+  overflow: hidden;
+  width: calc(636px - 1.5rem);
+}
+
 section > div {
-	height: 288px;
 	overflow: hidden;
 	padding: 0 0 0 24px;
 	width: 636px;
@@ -50,5 +51,70 @@ section > div > div {
 }
 
 section > div > div:focus {
-    outline: 0px solid transparent;
+  outline: 0px solid transparent;
+}
+
+fieldset {
+  border: 1px dashed;
+}
+
+fieldset legend {
+  padding: 0 .5rem;
+}
+
+fieldset .input_1-4 {
+  width: calc(25% - .25rem);
+}
+
+fieldset .input_3-4 {
+  width: calc(75% - .25rem);
+}
+
+fieldset .input_1-3 {
+  width: calc(33% - .25rem);
+}
+
+fieldset .input_2-3 {
+  width: calc(66% - .25rem);
+}
+
+fieldset .input_1-2 {
+  width: calc(50% - .25rem);
+}
+
+fieldset.footer {
+  border-color: transparent;
+  margin: 1rem calc(-1rem - 1px);
+}
+
+fieldset fieldset {
+  border-color: transparent;
+  margin: 0 0 1rem;
+  padding: 4px;
+  text-align: right;
+}
+
+fieldset button:first-of-type {
+  margin-right: 1rem;
+}
+
+/* Bootstrapped */
+.alert {
+  margin: 1rem 1.5rem;
+  padding: 0 0 0 24px;
+}
+
+.alert-verydark {
+  background-color: #505457;
+  color: #B0AEAC;
+}
+
+.form-control {
+  display: inline-block;
+}
+
+.form-control-dark {
+  background-color: #505457;
+  border-color: #505457;
+  color: #f0f0f0;
 }
