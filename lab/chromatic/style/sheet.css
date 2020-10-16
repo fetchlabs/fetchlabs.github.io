@@ -4,10 +4,6 @@ body {
 	font-family: "Texta Light";
 }
 
-aside {
-	display: none;
-}
-
 main {
 	backdrop-filter: blur(2px);
 	height: 720px;
@@ -96,6 +92,16 @@ fieldset fieldset {
 
 fieldset button:first-of-type {
   margin-right: 1rem;
+}
+
+/* Flash Messaging */
+aside {
+  position: absolute;
+  background-color: orange;
+  height: 60px;
+  left: 1rem;
+  top: 0;
+  width: 100%;
 }
 
 /* Bootstrapped */

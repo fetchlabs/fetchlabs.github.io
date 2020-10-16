@@ -32,11 +32,25 @@
 			}
 			return num;
 		},
+		flash: function (message) {
+			if (!message) {
+				FTX.$("#flash").hidden = true;
+			}
 
+			const messages = {
+				invalid: "There's an issue with the colour values. Please try again"
+			};
+
+			FTX.$("#flash p").innerHTML = messages[message];
+			FTX.$("#flash").hidden = false;
+		},
 		process: function () {
-			FTX.validate();
-			FTX.convert.color();
-			FTX.colourise();
+			if (FTX.validate()) {
+				FTX.convert.color();
+				FTX.colourise();
+			} else {
+				FTX.flash("invalid");
+			}
 		},
 		validate: function () {
 			const inputs = {
@@ -77,6 +91,8 @@
 			});
 
 			FTX.$("#convert").addEventListener("click", FTX.process);
+
+			FTX.$("#close").addEventListener("click", FTX.flash);
 		},
 		init: function() {
 			this.listen();
