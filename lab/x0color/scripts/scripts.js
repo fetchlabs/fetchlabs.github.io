@@ -38,6 +38,15 @@
 				return document.querySelectorAll(selector);
 			}
 		},
+    emend: function (event) {
+      let string = event.target.value;
+
+      if (string.charAt(0) === "#") {
+        string = string.substr(1);
+      }
+
+      event.target.value = string.toUpperCase();
+    },
     process: function (event) {
       event.preventDefault();
       event.stopPropagation();
@@ -64,6 +73,7 @@
       FTX.$("#decimal").value = decimal;
     },
 		listen: function () {
+      FTX.$("#hexcolor").addEventListener("blur", FTX.emend);
       FTX.$("#convert").addEventListener("click", FTX.process);
 		},
 		init: function() {
