@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      font-family: monospace;
+    }
+
+    textarea {
+      border: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+</style>
+
+  <textarea>
+    const UTIL = {
+      convert: {
+        color: function (prefix, alpha, hexadecimal) {
+          return prefix + alpha + hexadecimal;
+        },
+        alpha: function (decimal) {
+          let opacity = false;
+          let alpha;
+  
+          if (decimal == undefined) {
+            return opacity
+          } else if (decimal < 0 || decimal > 1) {
+  
+          } else {
+            alpha = Math.round(255 * decimal);
+          }
+  
+          alpha = alpha.toString(16).toUpperCase();
+  
+          while (alpha.length < 2) { // Hex colours use pairs
+            alpha = "0" + alpha;
+          }
+  
+          return alpha;
+        },
+        decimal: function (hexadecimal) {
+          return parseInt(Number(hexadecimal), 10);
+        }
+      },
+    };
+  
+    const PLTT = {
+      primary: 009BE4,
+      secondary: D90B5E
+    };
+  </textarea>
+</html>

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Texta Light";
+  src: url("/fonts/Texta-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Texta Medium";
+  src: url("/fonts/Texta-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Texta Thin";
+  src: url("/fonts/Texta-Thin.otf") format("otf");
+}

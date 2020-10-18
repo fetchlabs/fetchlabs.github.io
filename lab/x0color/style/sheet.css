@@ -1,0 +1,183 @@
+body {
+	background-color: #262523;
+	color: #B0AEAC;
+	font-family: "Texta Light";
+}
+
+main {
+	backdrop-filter: blur(2px);
+	height: 720px;
+  padding: 64px 166px;
+	width: 1280px;
+}
+
+header {
+	margin: 12px 0px 32px;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: 100;
+  line-height: 48px;
+	margin: 0px 24px;
+}
+
+section {
+	backdrop-filter: blur(2px);
+	width: 947px;
+}
+
+section header {
+  overflow: hidden;
+  width: calc(636px - 1.5rem);
+}
+
+section > div {
+	overflow: hidden;
+	padding: 0 0 0 24px;
+	width: 636px;
+}
+
+section > div > div {
+	font-size: 24px;
+	min-height: 16px;
+	letter-spacing: .06px;
+	line-height: 32px;
+	width: auto;
+}
+
+section > div > div:focus {
+  outline: 0px solid transparent;
+}
+
+fieldset {
+  border: 1px dashed;
+}
+
+fieldset legend {
+  padding: 0 .5rem;
+}
+
+fieldset .fieldset_1-3 {
+  display: inline-block;
+  width: calc(33% - .25rem);
+}
+
+fieldset .fieldset_2-3 {
+  display: inline-block;
+  width: calc(66% - .25rem);
+}
+
+fieldset .input_1-4 {
+  width: calc(25% - .25rem);
+}
+
+fieldset .input_3-4 {
+  width: calc(75% - .25rem);
+}
+
+fieldset .input_1-3 {
+  width: calc(33% - .25rem);
+}
+
+fieldset .input_2-3 {
+  width: calc(66% - .25rem);
+}
+
+fieldset .input_1-2 {
+  width: calc(50% - .25rem);
+}
+
+fieldset.footer {
+  border-color: transparent;
+  margin: 1rem calc(-1rem - 1px);
+}
+
+fieldset fieldset {
+  border-color: transparent;
+  padding: 4px;
+  text-align: right;
+}
+
+fieldset button:first-of-type {
+  margin-right: 1rem;
+}
+
+/* Flash Messaging */
+aside {
+  position: absolute;
+  background-color: orange;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* Bootstrapped */
+.alert {
+  margin: 1rem 1.5rem;
+  padding: 0 0 0 24px;
+}
+
+.alert-verydark {
+  background-color: #505457;
+  color: #B0AEAC;
+}
+
+.form-control {
+  display: inline-block;
+}
+
+.form-control::placeholder {
+  color: silver;
+}
+
+.form-control-dark {
+  background-color: #505457;
+  border-color: #505457;
+  color: #f0f0f0;
+}
+
+.form-control-clear {
+  background-color: transparent;
+  border-color: transparent;
+  color: #f0f0f0;
+}
+
+#sample {
+  position: relative;
+  top: -.5rem;
+  width: calc(50% - 1.25rem);
+}
+
+#sample div {
+  background-image: url(../graphics/backgrounds/checkered.png);
+  background-size: cover;
+  border-radius: .3rem;
+
+  height: 3rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#swatch {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#decimal {
+  color: #505457;
+  margin-right: 8.5rem;
+}
+
+#hexadecimal {
+  position: relative;
+  text-align: center;
+  top: -.5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8 />
+		<title>Fetch LABS | Chromatic Conversion</title>
+		<link rel="stylesheet" type="text/css" href="style/typography.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="style/base.css" />
+		<link rel="stylesheet" type="text/css" href="style/sheet.css" />
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Alpha ┼  Hexidecimal</h1>
+			</header>
+			<section>
+				<header class="alert alert-dark alert-verydark" >
+					<p>Use the inputs below to convert your colour format</p>
+				</header>
+				<div id="wrapper">
+					<form id="form">
+            <fieldset class="inputs">
+              <fieldset class="fieldset_1-3">
+                <legend>opacity</legend>
+                <input id="opacity" class="form-control form-control-lg" placeholder="0.0 — 1"/>
+              </fieldset>
+              <fieldset class="fieldset_2-3">
+                <legend>hexadecimal</legend>
+                <input id="hexcolor" class="form-control form-control-lg" placeholder="FFFFFF" />
+              </fieldset>
+            </fieldset>
+            <fieldset class="footer">
+							<fieldset>
+                <div id="sample">
+                  <div></div>
+                  <button id="swatch" class="form-control form-control-lg input_3-4" disabled></button>
+                </div>
+								<input id="hexadecimal" class="form-control form-control-lg form-control-dark input_1-2" disabled />
+							</fieldset>
+							<fieldset>
+                <input id="decimal" class="form-control form-control-lg  input_1-2 form-control-clear" disabled />
+								<button id="convert" class="btn btn-primary input_1-4">CONVERT</button>
+							</fieldset>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+		</main>
+		<aside id="flash">
+			<header id="close"><i></i></header>
+			<p></p>
+		</aside>
+		<script type="text/javascript" src="vendor/micro/µ.js"></script>
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+	</body>
+</html>
