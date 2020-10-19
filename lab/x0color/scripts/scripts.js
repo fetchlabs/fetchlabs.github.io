@@ -25,7 +25,8 @@
         return alpha;
       },
       decimal: function (hexadecimal) {
-        return parseInt(Number(hexadecimal), 10);
+        if (typeof hexadecimal === "string") { hexadecimal = Number(hexadecimal); }
+        return parseInt(hexadecimal, 10);
       }
 		},
   };
