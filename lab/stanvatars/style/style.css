@@ -1,0 +1,31 @@
+/* .undefined {
+  width: 480px; height: 100px; position: absolute; left: 510px; top: 312px; opacity: 1;
+} */
+
+.undefined {
+  /* background-color: gray; */
+  height: 120px;
+  left: 50%;
+  margin-left: -12.5vw;
+  opacity: 1;
+  position: absolute;
+  top: 312px;
+  width: 25vw;
+  min-width: 260px;
+}
+
+.undefined > div {
+  position: absolute; width: 130px; left: 0px; opacity: 1;
+}
+
+.profileImage {
+  width: 120px; height: 120px; position: absolute; opacity: 1;
+}
+
+.profileImage.focused {
+
+}
+
+.undefined > div:nth-child(2) .profileImage {
+  left: 130px;
+}

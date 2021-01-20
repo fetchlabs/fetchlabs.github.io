@@ -17,7 +17,7 @@
           this.FOCUSED = this.AVATARS - 1;
         }
       } else {
-        if (this.FOCUSED < this.AVATARS) {
+        if (this.FOCUSED < this.AVATARS - 1) {
           this.FOCUSED++;
         } else {
           this.FOCUSED = 0;
@@ -28,17 +28,15 @@
     },
     listen: function () {
       document.addEventListener('keyup', (event) => {
-        const keyName = event.key;
-      
-        switch (keyName) {
-          case 37:
+        switch (event.code) {
+          case "ArrowLeft":
             this.remote("<");
             break;
-          case 39:
+          case "ArrowRight":
             this.remote(">");
             break;
           default:
-            console.log(`Sorry, we are out of ${expr}.`);
+
         }
       }, false);
     },
