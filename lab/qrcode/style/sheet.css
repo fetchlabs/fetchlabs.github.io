@@ -1,0 +1,11 @@
+body {
+	height: 100vh;
+	position: relative;
+}
+
+body > footer {
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+}
