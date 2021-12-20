@@ -9,3 +9,13 @@ body > footer {
 	text-align: center;
 	width: 100vw;
 }
+
+header h1 {
+	font-family: monospace;
+	text-align: center;
+}
+
+section {
+	margin: .5rem auto 2rem;
+	width: 20rem
+}
