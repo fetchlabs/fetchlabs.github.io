@@ -19,3 +19,12 @@ section {
 	margin: .5rem auto 2rem;
 	width: 20rem
 }
+
+figure {
+	background-color: #f0f0f0;
+	width: 100%;
+	aspect-ratio: 1/1;
+}
+
+/* #009be4 */
+/* #f10c69 */

@@ -69,3 +69,7 @@ button.danger:hover {
 p {
 	margin: .5rem 0 .5rem;
 }
+
+figure {
+	margin: 0;
+}
