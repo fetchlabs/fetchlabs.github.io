@@ -27,7 +27,8 @@
 		setup: function () {
 			$("body > footer date").html(String((new Date()).getFullYear()));
 			this.encode({
-				path: "https://thefetchables.fetchtv.com.au/"
+				// path: "https://thefetchables.fetchtv.com.au/"
+				path: "https://www.instagram.com/watch.grass.grow/"
 			});
 		},
 		init: function () {
